@@ -1,0 +1,251 @@
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  
+  nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  
+  .pokemon-container, .favorites-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  
+  .pokemon-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .pokemon-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pokemon-card img {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .pokemon-card h3 {
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; 
+  }
+  
+  
+  .pokemon-card button {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .pokemon-card button:hover {
+    background-color: #e84118;
+  }
+  
+  
+  .pokemon-card a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #0097e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .pokemon-card a:hover {
+    background-color: #0077c2;
+  }
+  
+  
+  input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  
+  button.load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button.load-more:hover {
+    background-color: #218838;
+  }
+  
+  
+  .dark-mode .pokemon-card {
+    background: #444; 
+    color: white; 
+  }
+  
+  .dark-mode .pokemon-card h3 {
+    color: #fff; 
+  }
+  
+  .dark-mode .pokemon-card button {
+    background-color: #ff6b6b;
+  }
+  
+  .dark-mode .pokemon-card button:hover {
+    background-color: #ff4757;
+  }
+  
+  .dark-mode .pokemon-card a {
+    background-color: #1e90ff;
+  }
+  
+  .dark-mode .pokemon-card a:hover {
+    background-color: #0077c2;
+  }
+  
+  .pokemon-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 20px;
+  }
+  
+  
+  .pokemon-card-detail {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+ 
+  .pokemon-image {
+    width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+ 
+  .pokemon-card-detail h1 {
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .pokemon-card-detail p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .pokemon-card-detail h3 {
+    margin-top: 15px;
+    color: #222;
+  }
+  
+  .pokemon-card-detail ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pokemon-card-detail li {
+    font-size: 16px;
+    background: #eee;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  /* Modo oscuro */
+  .dark-mode .pokemon-detail {
+    background: #222;
+  }
+  
+  .dark-mode .pokemon-card-detail {
+    background: #333;
+    color: white;
+  }
+  
+  .dark-mode .pokemon-card-detail h1,
+  .dark-mode .pokemon-card-detail p,
+  .dark-mode .pokemon-card-detail h3 {
+    color: white;
+  }
+  
+  .dark-mode .pokemon-card-detail li {
+    background: #444;
+    color: white;
+  }
+  .no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #ff4757;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+  body {
+    font-family: 'Raleway', sans-serif;
+  }
